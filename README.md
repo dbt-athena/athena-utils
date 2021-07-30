@@ -16,7 +16,7 @@ for more information on installing packages.
 
 ## Compatibility
 
-This package provides "shims" for [`dbt_utils`](https://github.com/fishtown-analytics/dbt-utils).
+This package provides "shims" for [`dbt_utils`](https://github.com/fishtown-analytics/dbt-utils) thanks to @dbarok ([initial implementation](https://github.com/dbt-labs/dbt-utils/pull/380)).
 In the future more shims could be added to this repository.
 
 ### Contributing
