@@ -8,15 +8,17 @@ that:
 
 ## Installation Instructions
 
-Check [dbt Hub](https://hub.getdbt.com) for the latest installation
-instructions, or [read the docs](https://docs.getdbt.com/docs/package-management)
-for more information on installing packages.
+Add to your packages.yml
 
----
+```yaml
+packages:
+  - git: https://github.com/lalalilo/athena-utils
+    revision: 0.1.0
+```
 
 ## Compatibility
 
-This package provides "shims" for [`dbt_utils`](https://github.com/fishtown-analytics/dbt-utils) thanks to @dbarok ([initial implementation](https://github.com/dbt-labs/dbt-utils/pull/380)).
+This package provides "shims" for [`dbt_utils`](https://github.com/fishtown-analytics/dbt-utils) thanks to [@dbarok](https://github.com/dbarok) ([initial implementation](https://github.com/dbt-labs/dbt-utils/pull/380)).
 In the future more shims could be added to this repository.
 
 ### Contributing
