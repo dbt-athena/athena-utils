@@ -2,7 +2,7 @@
 
     split_part(
         {{ string_text }},
-        '{{ delimiter_text }}',
+        {{ delimiter_text }},
         {{ part_number }}
         )
 
