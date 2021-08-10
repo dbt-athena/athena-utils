@@ -28,7 +28,7 @@ For dbt >= v0.19.2, , add the following lines to your `dbt_project.yml`:
 ```yaml
 dispatch:
   - macro_namespace: dbt_utils
-    search_order: [athena_utils]
+    search_order: [athena_utils, dbt_utils]
 ```
 
 ## Compatibility
