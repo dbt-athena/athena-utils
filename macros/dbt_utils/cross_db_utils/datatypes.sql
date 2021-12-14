@@ -1,18 +1,18 @@
-{% macro athena__type_string() %}
+{%- macro athena__type_string() -%}
     VARCHAR
-{% endmacro %}
+{%- endmacro -%}
 
-{% macro athena__type_float() %}
+{%- macro athena__type_float() -%}
     DOUBLE
-{% endmacro %}
+{%- endmacro -%}
 
-{% macro athena__type_numeric() %}
+{%- macro athena__type_numeric() -%}
     DECIMAL(
         28,
         6
     )
-{% endmacro %}
+{%- endmacro -%}
 
-{% macro athena_type_int() %}
+{%- macro athena_type_int() -%}
     INTEGER
-{% endmacro %}
+{%- endmacro -%}

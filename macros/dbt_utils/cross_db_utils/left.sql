@@ -1,8 +1,8 @@
-{% macro athena__left(string_text, start) %}
+{%- macro athena__left(string_text, start) -%}
 
     substr(
         {{ string_text }},
         {{ start }}
         )
 
-{% endmacro %}
+{%- endmacro -%}
