@@ -16,16 +16,6 @@ packages:
     version: 0.2.0
 ```
 
-For dbt >= v0.19.2, , add the following lines to your `dbt_project.yml`:
-
-```yaml
-dispatch:
-  - macro_namespace: dbt_utils
-    search_order: [athena_utils, dbt_utils]
-  - macro_namespace: dbt_expectations
-    search_order: [athena_utils, dbt_expectations]
-```
-
 For dbt < v0.19.2, add the following lines to your `dbt_project.yml`:
 
 ```yaml
@@ -33,13 +23,17 @@ vars:
   dbt_utils_dispatch_list: ["athena_utils"]
 ```
 
+For dbt >= v0.19.2, , add the following lines to your `dbt_project.yml`:
+
+```yaml
+dispatch:
+  - macro_namespace: dbt_utils
+    search_order: [athena_utils, dbt_utils]
+```
 
 ## Compatibility
 
-This package provides compatibility "shims" for:
-- [dbt_utils](https://github.com/dbt-labs/dbt-utils) thanks to [@dbarok](https://github.com/dbarok) ([initial implementation](https://github.com/dbt-labs/dbt-utils/pull/380))
-- [dbt_expectations](https://github.com/calogica/dbt-expectations)
-
+This package provides "shims" for [`dbt_utils`](https://github.com/fishtown-analytics/dbt-utils) thanks to [@dbarok](https://github.com/dbarok) ([initial implementation](https://github.com/dbt-labs/dbt-utils/pull/380)).
 In the future more shims could be added to this repository.
 
 ### Contributing
