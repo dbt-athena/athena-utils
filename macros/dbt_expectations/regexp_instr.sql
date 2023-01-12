@@ -3,5 +3,5 @@
 {# To match behavior of regexp_instr(), we need to return >0 when pattern is found and 0 when pattern is not found #}
 
 {% macro athena__regexp_instr(source_value, regexp, position, occurrence, is_raw) %}
-cast( regexp_like( {{ source_value }}, '{{ regexp }}' ) as int )
+cast( regexp_like( cast( {{ source_value }} as varchar ), '{{ regexp }}' ) as int )
 {% endmacro %}
