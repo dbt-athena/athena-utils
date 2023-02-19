@@ -20,11 +20,11 @@
         {%- endif -%}
         
         {%- for calendar_dim in calendar_dimensions %}
-        parent_metric_cte.{{ calendar_dim }},
+        {{ calendar_dim }},
         {%- endfor %}
 
         {%- for dim in dimensions %}
-        parent_metric_cte.{{ dim }},
+        {{ dim }},
         {%- endfor %}
         {{ metric_val }}
         
