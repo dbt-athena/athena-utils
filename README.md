@@ -24,6 +24,8 @@ dispatch:
     search_order: [athena_utils, dbt_utils]
   - macro_namespace: dbt_expectations
     search_order: [athena_utils, dbt_expectations]
+  - macro_namespace: metrics
+    search_order: [athena_utils, metrics]
 ```
 
 For dbt < v0.19.2, add the following lines to your `dbt_project.yml`:
@@ -33,12 +35,13 @@ vars:
   dbt_utils_dispatch_list: ["athena_utils"]
 ```
 
-
 ## Compatibility
 
 This package provides compatibility "shims" for:
+
 - [dbt_utils](https://github.com/dbt-labs/dbt-utils) thanks to [@dbarok](https://github.com/dbarok) ([initial implementation](https://github.com/dbt-labs/dbt-utils/pull/380))
 - [dbt_expectations](https://github.com/calogica/dbt-expectations)
+- [dbt_metrics](https://github.com/dbt-labs/dbt_metrics/tree/1.3.2) (>=1.3.0, <1.4.0)
 
 In the future more shims could be added to this repository.
 
