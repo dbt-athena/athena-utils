@@ -13,7 +13,7 @@ Add to your packages.yml
 ```yaml
 packages:
   - package: lalalilo/athena_utils
-    version: 0.3.0
+    version: 0.4.0
 ```
 
 For dbt >= v0.19.2, , add the following lines to your `dbt_project.yml`:
