@@ -1,3 +1,5 @@
+# [⚠️ Maintainer needed. Please contact if you're using this library in your project]
+
 # athena-utils
 
 This [dbt](https://github.com/fishtown-analytics/dbt) package contains macros
