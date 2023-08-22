@@ -53,5 +53,5 @@ the `README.md` file.
 
 
 ## Acknoledgements
-`athena-utils` was first developed by [lalalilo](https://github.com/lalalilo), then ownseript was transfered to 
+`athena-utils` was first developed by [lalalilo](https://github.com/lalalilo), then ownership was then transfered to 
 [dbt-athena](https://github.com/dbt-athena).
