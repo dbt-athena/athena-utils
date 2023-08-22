@@ -1,5 +1,3 @@
-# [⚠️ Maintainer needed. Please contact if you're using this library in your project]
-
 # athena-utils
 
 This [dbt](https://github.com/fishtown-analytics/dbt) package contains macros
@@ -14,8 +12,8 @@ Add to your packages.yml
 
 ```yaml
 packages:
-  - package: lalalilo/athena_utils
-    version: 0.4.0
+  - package: dbt-athena/athena_utils
+    version: 0.5.0
 ```
 
 For dbt >= v0.19.2, , add the following lines to your `dbt_project.yml`:
@@ -52,3 +50,8 @@ In the future more shims could be added to this repository.
 We welcome contributions to this repo! To contribute a new feature or a fix,
 please open a Pull Request with 1) your changes and 2) updated documentation for
 the `README.md` file.
+
+
+## Acknoledgements
+`athena-utils` was first developed by [lalalilo](https://github.com/lalalilo), then ownseript was transfered to 
+[dbt-athena](https://github.com/dbt-athena).
