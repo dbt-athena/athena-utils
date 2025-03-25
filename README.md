@@ -4,7 +4,7 @@ This [dbt](https://github.com/fishtown-analytics/dbt) package contains macros
 that:
 
 - can be (re)used across dbt projects running on Athena
-- define Athena-specific implementations of [dispatched macros](https://docs.getdbt.com/reference/dbt-jinja-functions/adapter/#dispatch) from other packages
+- define Athena-specific implementations of [dispatched macros](https://docs.getdbt.com/reference/dbt-jinja-functions/dispatch) from other packages
 
 ## Installation Instructions
 
